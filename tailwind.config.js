@@ -14,8 +14,8 @@ export default {
       primary: ["League Spartan", "sans-serif"],
     },
     fontSize: {
-      lg: "0.938rem",
-      md: "0.813rem",
+      lg: "1.25rem",
+      md: "0.938rem",
     },
   },
   plugins: [],
