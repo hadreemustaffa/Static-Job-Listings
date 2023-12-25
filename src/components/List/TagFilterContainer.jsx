@@ -1,9 +1,13 @@
 import PropTypes from "prop-types";
-import iconRemove from "../../assets/images/icon-remove.svg";
+import iconRemove from "/assets/images/icon-remove.svg";
 
 export default function TagFilterContainer({ tags, clear, remove }) {
   return (
-    <div className="flex w-full -translate-y-6 flex-row items-center justify-between rounded-[0.25rem] bg-c-neutral-lighter px-4 py-2">
+    <div
+      className={`${
+        tags.length === 0 && "opacity-0"
+      } flex w-full -translate-y-6 flex-row items-center justify-between rounded-[0.25rem] bg-c-neutral-lighter px-4 py-2 transition-opacity`}
+    >
       <ul className="flex flex-row flex-wrap items-center gap-4">
         {tags.map((tag) => (
           <li
