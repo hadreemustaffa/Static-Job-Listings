@@ -12,6 +12,10 @@ const ListCard = ({ data, tags, handleFilter }) => {
     contract,
     location,
   } = data;
+
+  const logoUrl = new URL(logo, import.meta.url).href;
+  const imgAlt = company + " company logo";
+
   return (
     <li
       className={`relative flex flex-col rounded-[0.25rem] ${
@@ -20,7 +24,11 @@ const ListCard = ({ data, tags, handleFilter }) => {
     >
       <div className=" flex flex-row items-center gap-4 border-b border-b-c-neutral-dark md:basis-3/4 md:border-none">
         <div className="absolute -top-6 md:static">
-          <img className="h-12 w-12 md:h-24 md:w-24" src={logo} alt="" />
+          <img
+            className="h-12 w-12 md:h-24 md:w-24"
+            src={logoUrl}
+            alt={imgAlt}
+          />
         </div>
         <div className="flex flex-col gap-2 pt-4">
           <div className="flex flex-row flex-wrap gap-4">
