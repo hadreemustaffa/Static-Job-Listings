@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import iconRemove from "/assets/images/icon-remove.svg";
+import iconRemove from "/icon-remove.svg";
 
 export default function TagFilterContainer({ tags, clear, remove }) {
   return (

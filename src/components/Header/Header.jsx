@@ -1,5 +1,5 @@
-import desktopHeaderImg from "/assets/images/bg-header-desktop.svg";
-import mobileHeaderImg from "/assets/images/bg-header-mobile.svg";
+import desktopHeaderImg from "/bg-header-desktop.svg";
+import mobileHeaderImg from "/bg-header-mobile.svg";
 
 export default function Header() {
   return (
