@@ -1,22 +1,19 @@
 import TagButton from "./TagButton";
 import PropTypes from "prop-types";
 
-const ListCard = ({
-  id,
-  logo,
-  company,
-  isNew,
-  isFeatured,
-  position,
-  postedAt,
-  contract,
-  location,
-  tags,
-  handleFilter,
-}) => {
+const ListCard = ({ data, tags, handleFilter }) => {
+  const {
+    logo,
+    company,
+    new: isNew,
+    featured: isFeatured,
+    position,
+    postedAt,
+    contract,
+    location,
+  } = data;
   return (
     <li
-      key={id}
       className={`relative flex flex-col rounded-[0.25rem] ${
         isFeatured && "border-l-4 border-l-c-primary"
       } bg-c-neutral-lighter p-4 shadow-lg md:flex-row md:items-center md:justify-between md:gap-4 lg:gap-6 lg:p-8`}
@@ -65,15 +62,8 @@ const ListCard = ({
 };
 
 ListCard.propTypes = {
+  data: PropTypes.object,
   id: PropTypes.number,
-  logo: PropTypes.string,
-  company: PropTypes.string,
-  isNew: PropTypes.bool,
-  isFeatured: PropTypes.bool,
-  position: PropTypes.string,
-  postedAt: PropTypes.string,
-  contract: PropTypes.string,
-  location: PropTypes.string,
   tags: PropTypes.array,
   handleFilter: PropTypes.func,
 };

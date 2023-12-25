@@ -50,14 +50,7 @@ export default function App() {
             return tags.length === 0 ? (
               <ListCard
                 key={data.id}
-                logo={data.logo}
-                company={data.company}
-                isNew={data.new}
-                isFeatured={data.featured}
-                position={data.position}
-                postedAt={data.postedAt}
-                contract={data.contract}
-                location={data.location}
+                data={data}
                 tags={cardTags}
                 handleFilter={handleFilter}
               />
@@ -65,14 +58,7 @@ export default function App() {
               filterByTags(cardTags, tags) && (
                 <ListCard
                   key={data.id}
-                  logo={data.logo}
-                  company={data.company}
-                  isNew={data.new}
-                  isFeatured={data.featured}
-                  position={data.position}
-                  postedAt={data.postedAt}
-                  contract={data.contract}
-                  location={data.location}
+                  data={data}
                   tags={cardTags}
                   handleFilter={handleFilter}
                 />
