@@ -6,7 +6,7 @@ export default function TagFilterContainer({ tags, clear, remove }) {
     <div
       className={`${
         tags.length === 0 && "opacity-0"
-      } flex w-full -translate-y-6 flex-row items-center justify-between rounded-[0.25rem] bg-c-neutral-lighter px-4 py-2 transition-opacity`}
+      } flex w-full -translate-y-6 flex-row items-center justify-between rounded-[0.25rem] bg-c-neutral-lighter px-4 py-2 shadow-lg transition-opacity`}
     >
       <ul className="flex flex-row flex-wrap items-center gap-4">
         {tags.map((tag) => (
@@ -19,14 +19,14 @@ export default function TagFilterContainer({ tags, clear, remove }) {
               onClick={() => {
                 remove(tag);
               }}
-              className=" remove bg-c-primary p-1"
+              className=" bg-c-primary p-1 hover:bg-c-neutral-darker"
             >
               <img width={16} height={16} src={iconRemove} alt="" />
             </button>
           </li>
         ))}
       </ul>
-      <button onClick={clear} className="p-2">
+      <button onClick={clear} className="p-2 hover:underline">
         Clear
       </button>
     </div>

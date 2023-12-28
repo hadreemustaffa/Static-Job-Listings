@@ -32,7 +32,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <main className=" mx-8 mb-8 transition-all lg:mx-32">
+      <main className=" transition-padding px-8 pb-8 lg:px-32">
         <TagFilterContainer
           tags={tags}
           clear={handleClear}
