@@ -20,7 +20,7 @@ const ListCard = ({ data, tags, handleFilter }) => {
     <li
       className={`relative flex flex-col rounded-[0.25rem] ${
         isFeatured && "border-l-4 border-l-c-primary"
-      } bg-c-neutral-lighter p-4 shadow-lg md:flex-row md:items-center md:justify-between md:gap-4 lg:gap-6 lg:px-8 lg:py-4`}
+      } bg-c-neutral-lightest p-4 shadow-lg md:flex-row md:items-center md:justify-between md:gap-4 lg:gap-6 lg:px-8 lg:py-4`}
     >
       <div className=" flex flex-row items-center gap-4 border-b border-b-c-neutral-dark md:basis-3/4 md:border-none">
         <div className="absolute -top-6 md:static">
