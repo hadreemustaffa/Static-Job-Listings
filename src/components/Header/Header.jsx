@@ -8,7 +8,7 @@ export default function Header() {
         <picture>
           <source media="(max-width: 767px)" srcSet={mobileHeaderImg} />
           <source media="(min-width: 768px)" srcSet={desktopHeaderImg} />
-          <img className="w-full" src={mobileHeaderImg} alt="" />
+          <img className="h-36 w-full" src={mobileHeaderImg} alt="" />
         </picture>
       </header>
     </>
