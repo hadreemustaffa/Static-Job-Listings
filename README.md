@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/job-listings-with-vitereact-and-tailwindcss--4__k7mCug)
 - Live Site URL: [Github Pages](https://hadreemustaffa.github.io/static-job-listings/)
 
 ## My process
